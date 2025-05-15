@@ -37,7 +37,7 @@ public class Asiento {
             disponible = true;
             System.out.println("Reserva del asiento #" + numero + " cancelada.");
         } else {
-            System.out.println("El asiento #" + numero + " ya está disponible.");
+            System.out.println("El asiento #" + numero + " se encuentra disponible.");
         }
     }
 }
