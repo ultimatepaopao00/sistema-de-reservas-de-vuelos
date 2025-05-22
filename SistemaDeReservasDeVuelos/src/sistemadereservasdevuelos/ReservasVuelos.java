@@ -1,3 +1,4 @@
+
 package sistemadereservasdevuelos;
 
 import java.time.LocalDateTime;
@@ -49,3 +50,28 @@ public class ReservasVuelos {
             this.apellido = apellido;
             
         }
+        
+    }
+        static class Reserva {
+        String codigo;
+        Vuelo vuelo;
+        Pasajero pasajero;
+        LocalDateTime fecha;
+        int pasajeros;
+        String estado;
+
+        public Reserva(String codigo, Vuelo vuelo, Pasajero pasajero, LocalDateTime fecha, int pasajeros, String estado) {
+            this.codigo = codigo;
+            this.vuelo = vuelo;
+            this.pasajero = pasajero;
+            this.fecha = fecha;
+            this.pasajeros = pasajeros;
+            this.estado = estado;
+        }
+        
+            private List<Vuelo> vuelos = new ArrayList<>();
+            private List<Reserva> reservas = new ArrayList<>();
+            private Scanner scanner = new Scanner(System.in);
+        }
+
+}
