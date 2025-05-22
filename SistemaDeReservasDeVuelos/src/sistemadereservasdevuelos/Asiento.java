@@ -5,7 +5,7 @@ public class Asiento {
     private boolean disponible;
     private String clase;
 
-    public Asiento(int numero) {
+    public Asiento(int numero, String clase) {
         this.numero = numero;
         this.clase = clase;
         this.disponible = true;
@@ -26,7 +26,7 @@ public class Asiento {
     public void reservar() {
         if (disponible) {
             disponible = false;
-            System.out.println("Asiento #" + numero + " reservado con exito.");
+            System.out.println("Asiento #" + numero + " reservado con éxito.");
         } else {
             System.out.println("El asiento #" + numero + " se encuentra reservado.");
         }
